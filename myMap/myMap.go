@@ -45,4 +45,8 @@ func MyMap() {
 	newPersonSalary["mike"] = 18000
 	fmt.Println("Person salary changed", personSalary)
 
+	//map 之间不能使用 == 操作符判断，
+	// == 只能用来检查 map 是否为 nil。
+
+
 }

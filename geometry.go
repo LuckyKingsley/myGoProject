@@ -1,9 +1,9 @@
 package main
 
 import (
-	"geometry/myMap"
 	"log"
 	_ "math"
+	"geometry/string"
 )
 
 //在Go中，任何以大写字母开头的变量或者函数都是被导出的名字。其它包只能访问被导出的函数和变量
@@ -43,5 +43,6 @@ func main() {
 
 	//base.Base()
 	//slice.ArraySlice()
-	myMap.MyMap()
+	//myMap.MyMap()
+	string.StringFunc()
 }
