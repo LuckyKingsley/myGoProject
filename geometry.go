@@ -1,9 +1,8 @@
 package main
 
 import (
-	"log"
+	"geometry/concurrent"
 	_ "math"
-	"geometry/string"
 )
 
 //在Go中，任何以大写字母开头的变量或者函数都是被导出的名字。其它包只能访问被导出的函数和变量
@@ -19,13 +18,13 @@ var rectLen, rectWidth float64 = 6, 7
 *2. init 函数会检查长和宽是否大于0
  */
 func init() {
-	println("main package initialized")
-	if rectLen < 0 {
-		log.Fatal("length is less than zero")
-	}
-	if rectWidth < 0 {
-		log.Fatal("width is less than zero")
-	}
+	//println("main package initialized")
+	//if rectLen < 0 {
+	//	log.Fatal("length is less than zero")
+	//}
+	//if rectWidth < 0 {
+	//	log.Fatal("width is less than zero")
+	//}
 }
 
 func main() {
@@ -44,5 +43,13 @@ func main() {
 	//base.Base()
 	//slice.ArraySlice()
 	//myMap.MyMap()
-	string.StringFunc()
+	//string.StringFunc()
+	//pointer.PointerFunc()
+	//structureBody.SBFunc()
+	//method.MethFunc()
+	//myInterface.InterFunc()
+	//myInterface.ImplMoreInterfaces()
+	//concurrent.CcFunc()
+	//concurrent.BcFunc()
+	concurrent.BcpFunc()
 }

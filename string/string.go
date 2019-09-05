@@ -1,8 +1,11 @@
 package string
 
-import "fmt"
+import (
+	"fmt"
+	"unicode/utf8"
+)
 
-func StringFunc(){
+func StringFunc() {
 	s := "Hello World"
 	//printBytes(s)
 	//printChars(s)
@@ -18,18 +21,24 @@ func StringFunc(){
 	printCharsAndBytes(t)
 	printCharsAndBytes(s)
 
+	fmt.Printf("length of %s is %d\n", s, utf8.RuneCountInString(s))
+	fmt.Printf("length of %s is %d\n", t, utf8.RuneCountInString(t))
+
+	r := []rune(s)
+	r[0] = 'Y'
+	fmt.Println(r)
 }
 
 func printBytes(s string) {
-	for i:= 0; i < len(s); i++ {
+	for i := 0; i < len(s); i++ {
 		fmt.Printf("%x ", s[i])
 	}
 }
 
 func printChars(s string) {
 	runes := []rune(s)
-	for i:= 0; i < len(runes); i++ {
-		fmt.Printf("%c ",runes[i])
+	for i := 0; i < len(runes); i++ {
+		fmt.Printf("%c ", runes[i])
 	}
 }
 
