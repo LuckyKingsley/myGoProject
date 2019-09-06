@@ -51,5 +51,7 @@ func main() {
 	//myInterface.ImplMoreInterfaces()
 	//concurrent.CcFunc()
 	//concurrent.BcFunc()
-	concurrent.BcpFunc()
+	//concurrent.BcpFunc()
+	//concurrent.MySeclect()
+	concurrent.MutexFunc()
 }
