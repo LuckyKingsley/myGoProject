@@ -10,26 +10,26 @@ func MutexFunc() {
 	//如果在任意时刻只允许一个 Go 协程访问临界区，那么就可以避免竞态条件。而使用 Mutex 可以达到这个目的
 
 	//用mutex处理竞争临界值
-	//var w sync.WaitGroup
-	//var m sync.Mutex
-	//for i := 0; i < 100; i++ {
-	//	w.Add(1)
-	//	go increment1(&w, &m)
-	//}
-	//w.Wait()
-	//fmt.Println("final value of x is", x)
+	var w sync.WaitGroup
+	var m sync.Mutex
+	for i := 0; i < 100; i++ {
+		w.Add(1)
+		go increment1(&w, &m)
+	}
+	w.Wait()
+	fmt.Println("final value of x is", x)
 
 	//用信道处理竞争临界值
 	y := 0
 	var wg sync.WaitGroup
-	var cn chan int
+	cn := make(chan int, 1)
 	for i := 0; i < 100; i++ {
 		wg.Add(1)
 		go increment2(y, cn, &wg)
 		y = <-cn
 	}
 	wg.Wait()
-	fmt.Println("final value of x is", x)
+	fmt.Println("final value of y is", y)
 
 }
 

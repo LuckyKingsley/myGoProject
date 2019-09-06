@@ -1,7 +1,7 @@
 package main
 
 import (
-	"geometry/concurrent"
+	"geometry/errorHandling"
 	_ "math"
 )
 
@@ -53,5 +53,10 @@ func main() {
 	//concurrent.BcFunc()
 	//concurrent.BcpFunc()
 	//concurrent.MySeclect()
-	concurrent.MutexFunc()
+	//concurrent.MutexFunc()
+	//structureBody.StructBodyReplaceClass()
+	//structureBody.CombinationReplaceInheritanceFunc()
+	//myInterface.ImplementationPolymorphic()
+	//myDefer.DeferFunc()
+	errorHandling.ErrorHandingFunc()
 }
