@@ -1,7 +1,7 @@
 package main
 
 import (
-	"geometry/errorHandling"
+	"geometry/MyReflect"
 	_ "math"
 )
 
@@ -58,5 +58,9 @@ func main() {
 	//structureBody.CombinationReplaceInheritanceFunc()
 	//myInterface.ImplementationPolymorphic()
 	//myDefer.DeferFunc()
-	errorHandling.ErrorHandingFunc()
+	//errorHandling.ErrorHandingFunc()
+	//errorHandling.MyPanicFunc()
+	//firstClassFunction.MyFcFunc()
+	//firstClassFunction.MyUseFcFunc()
+	MyReflect.MyReflectFunc()
 }
