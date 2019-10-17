@@ -63,8 +63,8 @@ func SBFunc() {
 	fmt.Println("Employee 5:", emp5)
 
 	//指针
-	//可以使用 emp6.firstName 来代替显式的解引用 (*emp6).firstName
 	emp6 := &Employee{"Sam", "Anderson", 55, 6000}
+	//可以使用 emp6.firstName 来代替显式的解引用 (*emp6).firstName
 	fmt.Println("First Name:", (*emp6).firstName)
 	fmt.Println("Age:", (*emp6).age)
 

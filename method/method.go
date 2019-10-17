@@ -23,10 +23,10 @@ func MethFunc() {
 	emp2.displaySalary1("Michael Andrew")
 	fmt.Printf("\nEmployee name after change: %s", emp2.name)
 
-	fmt.Printf("\n\nEmployee salary before change: %d", emp2.salary)
+	fmt.Printf("\n\nEmployee salary before change: %s", emp2.name)
 	(&emp2).displaySalary1("Michael Andrew")
 	//没有这个必要，Go语言让我们可以直接使用 e.changeAge(51)。e.changeAge(51) 会自动被Go语言解释为 (&e).changeAge(51)。
-	fmt.Printf("\nEmployee salary after change: %d", emp2.salary)
+	fmt.Printf("\nEmployee salary after change: %s", emp2.name)
 
 	//一般来说，指针接收器可以使用在：对方法内部的接收器所做的改变应该对调用者可见时。
 	//指针接收器也可以被使用在如下场景：当拷贝一个结构体的代价过于昂贵时。

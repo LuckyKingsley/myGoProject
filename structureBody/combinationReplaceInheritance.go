@@ -58,7 +58,7 @@ type website struct {
 	//结构体不能嵌套一个匿名切片
 	//[] post
 	posts []post
-	//string
+	//stringprac
 	//int
 }
 

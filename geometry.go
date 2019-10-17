@@ -1,7 +1,7 @@
 package main
 
 import (
-	"geometry/MyReflect"
+	"geometry/cache2go"
 	_ "math"
 )
 
@@ -43,7 +43,7 @@ func main() {
 	//base.Base()
 	//slice.ArraySlice()
 	//myMap.MyMap()
-	//string.StringFunc()
+	//stringprac.StringFunc()
 	//pointer.PointerFunc()
 	//structureBody.SBFunc()
 	//method.MethFunc()
@@ -62,5 +62,8 @@ func main() {
 	//errorHandling.MyPanicFunc()
 	//firstClassFunction.MyFcFunc()
 	//firstClassFunction.MyUseFcFunc()
-	MyReflect.MyReflectFunc()
+	//MyReflect.MyReflectFunc()
+	//beego.Run()
+
+	cache2go.Cache2goTest()
 }

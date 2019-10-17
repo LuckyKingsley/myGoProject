@@ -5,7 +5,7 @@ import "fmt"
 func MyMap() {
 	// map 的零值是 nil。
 	// 如果你想添加元素到 nil map 中，会触发运行时 panic。因此 map 必须使用 make 函数初始化。
-	//personSalary := make(map[string]int)
+	//personSalary := make(map[stringprac]int)
 	var map1 map[string]int
 	if map1 == nil {
 		fmt.Println("map is nil. Going to make one.")
@@ -47,6 +47,5 @@ func MyMap() {
 
 	//map 之间不能使用 == 操作符判断，
 	// == 只能用来检查 map 是否为 nil。
-
 
 }
