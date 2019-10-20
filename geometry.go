@@ -1,7 +1,7 @@
 package main
 
 import (
-	"geometry/cache2go"
+	"geometry/jsontest"
 	_ "math"
 )
 
@@ -65,5 +65,8 @@ func main() {
 	//MyReflect.MyReflectFunc()
 	//beego.Run()
 
-	cache2go.Cache2goTest()
+	//cache2go.Cache2goTest()
+	//redistest.Redistestfunc()
+	//crontab.CrontabTest()
+	jsontest.JsonTest()
 }
