@@ -1,7 +1,7 @@
 package main
 
 import (
-	"geometry/jsontest"
+	"geometry/mysqltest"
 	_ "math"
 )
 
@@ -68,5 +68,6 @@ func main() {
 	//cache2go.Cache2goTest()
 	//redistest.Redistestfunc()
 	//crontab.CrontabTest()
-	jsontest.JsonTest()
+	//jsontest.JsonTest()
+	mysqltest.MysqlTest()
 }

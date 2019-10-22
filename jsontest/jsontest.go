@@ -16,7 +16,7 @@ type configuration struct {
 }
 
 func jsonTestInner() {
-	file, _ := os.Open("conf.json")
+	file, _ := os.Open("/Users/jinxin/go/src/geometry/jsontest/conf.json")
 
 	defer file.Close()
 
