@@ -16,6 +16,8 @@ type UserConterller struct {
 
 var userService = new(service.UserService)
 
+//var dasdas = &service.UserService{}
+
 func (p *UserConterller) Router(router *framework.RouterHandler) {
 	router.Router("/register", p.register)
 	router.Router("/login", p.login)

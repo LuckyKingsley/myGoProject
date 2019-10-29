@@ -9,11 +9,11 @@ import (
 
 //数据库的配置
 const (
-	username   = "admin"
-	password   = "123456"
-	ip         = "10.2.1.5"
+	username   = "usr_sheq"
+	password   = "Developdb!!)!"
+	ip         = "39.104.172.208"
 	port       = "3306"
-	dbName     = "microcloud"
+	dbName     = "db_qingtongcs"
 	driverName = "mysql"
 )
 

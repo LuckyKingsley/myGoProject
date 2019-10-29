@@ -1,7 +1,7 @@
 package main
 
 import (
-	"geometry/mysqltest"
+	mvcMain "geometry/mvc"
 	_ "math"
 )
 
@@ -69,5 +69,6 @@ func main() {
 	//redistest.Redistestfunc()
 	//crontab.CrontabTest()
 	//jsontest.JsonTest()
-	mysqltest.MysqlTest()
+	//mysqltest.MysqlTest()
+	mvcMain.MvcMain()
 }

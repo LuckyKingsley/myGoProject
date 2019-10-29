@@ -1,4 +1,4 @@
-package main
+package mvcMain
 
 import (
 	"fmt"
@@ -8,7 +8,7 @@ import (
 	"time"
 )
 
-func main() {
+func MvcMain() {
 
 	framework.InitDB()
 	framework.CreateTable()
